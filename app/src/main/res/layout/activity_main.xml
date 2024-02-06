@@ -8,7 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
             android:id="@+id/textView"
@@ -16,6 +17,7 @@
             android:layout_height="wrap_content"
             android:text="Happy Birthday!"
             android:textColor="#F39710"
+
 
             android:textSize="50sp" />
 
@@ -44,7 +46,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_weight=".5">
+            android:layout_weight="21"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
 
             <TextView
                 android:id="@+id/textView2"
@@ -56,6 +62,8 @@
                 android:id="@+id/seekBar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:max="5"
+                android:progress="2"
 
 
                 />
@@ -69,7 +77,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginRight="20dp">
 
 
             <Switch
@@ -77,14 +86,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Frosting"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:checked = "true"/>
 
             <Switch
                 android:id="@+id/switch2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Candles"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:checked = "true"/>
 
         </LinearLayout>
 
@@ -103,15 +114,14 @@
             />
 
 
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goodbye"
+                android:text="GOODBYE"
 
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="GOODBYE"
-            android:textSize="10sp"
-            />
+                android:textSize="10sp" />
 
     </LinearLayout>
 </LinearLayout>
